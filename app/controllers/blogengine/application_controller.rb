@@ -1,4 +1,3 @@
-module Blogengine
-  class ApplicationController < ActionController::Base
-  end
+class Blogengine::ApplicationController < ActionController::Base
+	layout 'layouts/application' 
 end
