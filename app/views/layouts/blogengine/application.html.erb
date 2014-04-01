@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blogengine</title>
+  <%= stylesheet_link_tag "application" %>
+  <%= stylesheet_link_tag    "blogengine/application", media: "all" %>
+  <%= javascript_include_tag "blogengine/application" %>
+  <%= javascript_include_tag "ckeditor/ckeditor.js" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

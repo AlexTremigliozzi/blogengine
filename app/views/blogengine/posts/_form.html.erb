@@ -21,6 +21,16 @@
   </div>
   <div class="field">
     <%= f.label :text %><br>
+	<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+	   if ($('textarea').length > 0) {      
+	     var data = $('textarea');
+	     $.each(data, function(i) {
+	       CKEDITOR.replace(data[i].id);
+	     });    
+	   } 
+	});
+	</script>
     <%= f.text_area :text %>
   </div>
   <div class="actions">

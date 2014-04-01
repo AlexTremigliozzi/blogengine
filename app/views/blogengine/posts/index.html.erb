@@ -4,7 +4,9 @@
   <thead>
     <tr>
       <th>Title</th>
+      <td>&nbsp;</td>
       <th>Author</th>
+      <td>&nbsp;</td>
       <th>Text</th>
       <th></th>
       <th></th>
@@ -17,7 +19,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.author %></td>
-        <td><%= post.text %></td>
+	<td><%= raw RedCloth.new(post.text).to_html %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>

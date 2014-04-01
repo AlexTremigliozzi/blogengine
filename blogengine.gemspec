@@ -19,6 +19,9 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.0.4"
   s.add_dependency 'jquery-rails'
   s.add_dependency "RedCloth", "~> 4.2.9"
+  s.add_dependency "ckeditor"
+  s.add_dependency "paperclip", "~> 4.1"
+
   
   s.add_development_dependency 'jquery-rails'
   s.add_development_dependency "sqlite3"
